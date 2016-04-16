@@ -1,7 +1,9 @@
-sut:
-  image: this
-  links:
-    - redis
-  command: echo "Tests pass!"
-redis:
-  image: redis
+version: '2'
+services:
+  sut:
+    image: this
+    links:
+      - redis
+    command: echo "Tests pass!"
+  redis:
+    image: redis
